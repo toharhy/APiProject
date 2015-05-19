@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shit > List</title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato|Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="CSS/select-theme-default.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="images/ShitGame_Title_3.png" alt="Title" class="headerImage">
+      <h3>An app that guides you to the nearest toilet</h3>
+      <h3 class="secondhead">Tap below to find your toilet!</h3>
+      
+      <div class="tpBox animated infinite pulse">
+        <a href="#poop">
+          <img class="tp" src="images/ToiletPaper_Asset.png" alt="Toilet Paper Roll">
+        <i class="fa fa-arrow-down"></i>
+        </a>
+      </div>
+
+    </div>
+
+  </header>
+  <section class="bar">
+    <h4>You Have: <span class="toilet-number"></span> Toilets </h4>
+
+</section>
+<section class="pooping">
+<div class="container flex">
+  <div class="poop" id="poop">
+    <h2>How badly do you have to go?</h2>
+    <select name="urgency" id="urgency" class="customSelect">
+      <option value="0">Choose Here</option>
+      <option value="1000">1.  Just ate!</option>
+      <option value="2250">2.  That time of day</option>
+      <option value="2000">3.  It's brewing, I can walk a bit</option>
+      <option value="1750">4.  I could use a bathroom</option>
+      <option value="1500">5.  I have 25 minutes tops</option>
+      <option value="1250">6.  Now I got both numbers</option>
+      <option value="1000">7.  Yup, feelin' it</option>
+      <option value="750">8.   Should really find a bathroom</option>
+      <option value="500">9.   Can't walk much or move really</option>
+      <option value="250">10.  If this was labour I'd be at 10 centimeters</option>
+      <option value="500">11.  Diarrhea</option>
+    </select>
+
+    <div class="adventurous">
+      Do you want to poop outdoors?
+      <select name="" class="customSelect" id="">
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+      </select>
+    </div>
+    <!-- button for get location -->
+    <button>
+      <h4>Get me a toilet!</h4>
+    </button>
+
+  </div>
+  <!-- end of pooping -->
+  <div class="map-container">
+    <div class="map" id="places"></div>
+  </div>
+  
+</div> 
+<!-- end of container -->
+</section>
+<!-- end of section -->
+<!-- footer -->
+<footer>
+  
+      <div class="footerBottom">
+        <p>© 2015 Sh*tList. All rights reserved.</p>
+        <p>Title & Toilet Paper designed by the most talented Shiera Aryev</p>
+      </div>
+
+</footer>
+   
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="select.min.js"></script>
+
+
+</body>
+</html>
